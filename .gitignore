@@ -1,0 +1,31 @@
+# Ignition specific
+data/logs/
+data/cache/
+data/*.lck
+data/*.log
+data/db/config.idb
+data/db/*.script
+data/derby.log
+data/temp/
+
+# Keep project resources but ignore runtime files
+!data/projects/
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE specific
+.vscode/
+.idea/
+*.iml
+
+# Environment files
+.env
+.env.local
+
+# Docker
+*.pid

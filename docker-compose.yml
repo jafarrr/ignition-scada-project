@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  ignition:
+    image: inductiveautomation/ignition:8.3
+    container_name: ignition-scada
+    ports:
+      - "8088:8088"   # HTTP
+      - "8043:8043"   # HTTPS
+      - "8060:8060"   # Gateway Network (for redundancy/connections)
+    volumes:
+      # Mount the data directory for persistent storage and local editing
+      - ./data:/usr/local/bin/ignition/data
+    environment:
+      # Accept EULA
+      - ACCEPT_IGNITION_EULA=Y
+      # Gateway admin credentials (change these for production)
+      - GATEWAY_ADMIN_USERNAME=admin
+      - GATEWAY_ADMIN_PASSWORD=password
+      # Set timezone (optional)
+      - TZ=America/New_York
+    restart: unless-stopped
+    networks:
+      - ignition-network
+
+networks:
+  ignition-network:
+    driver: bridge
