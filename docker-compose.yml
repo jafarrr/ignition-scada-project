@@ -14,6 +14,8 @@ services:
     environment:
       # Accept EULA
       - ACCEPT_IGNITION_EULA=Y
+      # Edition selection (standard, maker, edge)
+      - IGNITION_EDITION=standard
       # Gateway admin credentials (change these for production)
       - GATEWAY_ADMIN_USERNAME=admin
       - GATEWAY_ADMIN_PASSWORD=password
