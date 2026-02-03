@@ -1,4 +1,8 @@
-# Ignition specific
+# Ignition runtime files (not tracked)
+data/.container-init.conf
+data/.gateway.xml.bak
+data/request
+data/response
 data/logs/
 data/cache/
 data/*.lck
@@ -8,8 +12,9 @@ data/db/*.script
 data/derby.log
 data/temp/
 
-# Keep project resources but ignore runtime files
+# Track projects folder and configuration
 !data/projects/
+!data/config/
 
 # OS specific
 .DS_Store
