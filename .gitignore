@@ -1,6 +1,8 @@
 # Ignition runtime files (not tracked)
 data/.container-init.conf
 data/.gateway.xml.bak
+data/.context.tmp
+data/.redundancy.xml.bak
 data/request
 data/response
 data/logs/
@@ -9,10 +11,21 @@ data/*.lck
 data/*.log
 data/db/config.idb
 data/db/*.script
+data/db/imgimport/
 data/derby.log
 data/temp/
+data/commissioning.json
+data/gateway.xml
+data/modules.json
+data/init.properties.bak
+data/redundancy.xml
+data/jar-cache/
+data/metricsdb/
+data/var/
+data/config/resources/.resources/
+data/config/resources/migration-log-*.md
 
-# Track projects folder and configuration
+# Track projects folder and deployment configuration
 !data/projects/
 !data/config/
 

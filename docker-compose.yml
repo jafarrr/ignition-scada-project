@@ -21,6 +21,16 @@ services:
       - GATEWAY_ADMIN_PASSWORD=password
       # Set timezone (optional)
       - TZ=America/New_York
+
+      # Modules to enable (comma-separated list)
+      # Edit this list to include only the modules you want installed
+      # Common modules: vision, perspective, tag-historian, reporting, alarm-notification,
+      #                 opc-ua, sfc, sql-bridge, enterprise-administration, mobile,
+      #                 web-browser, web-developer, symbol-factory
+      # Driver modules: allen-bradley-drivers, siemens-drivers, modbus-driver-v2,
+      #                 bacnet-driver, dnp3-driver, logix-driver, omron-driver, tcp-driver
+      # Notification: sms-notification, voice-notification
+      - GATEWAY_MODULES_ENABLED=perspective,tag-historian,opc-ua,sql-bridge,web-developer
     restart: unless-stopped
     networks:
       - ignition-network

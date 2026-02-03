@@ -1,0 +1,19 @@
+{
+  "scope": "A",
+  "description": "OPC UA clients will authenticate against this profile by default.",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "config.json",
+    "users.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "unknown",
+      "timestamp": "2026-02-03T02:56:28Z"
+    },
+    "uuid": "a7d70e6a-52d6-477d-9c2b-c0f90d47f58e",
+    "lastModificationSignature": "8acb92899b31ac01d03fe3285eeee71eec4fa147be7d0c7d834595016251170a"
+  }
+}

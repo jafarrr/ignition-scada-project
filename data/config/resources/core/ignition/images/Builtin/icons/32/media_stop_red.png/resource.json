@@ -1,0 +1,20 @@
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "media_stop_red.png"
+  ],
+  "attributes": {
+    "width": 32,
+    "format": "PNG",
+    "lastModification": {
+      "actor": "import",
+      "timestamp": "2026-02-03T03:03:47Z"
+    },
+    "size": 231,
+    "lastModificationSignature": "a84a39118c0d58b45e5610e430c3801b59dbcfcf650b0f2509eb249c3eab8b64",
+    "height": 32
+  }
+}
